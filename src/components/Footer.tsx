@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, FileDown, Github, Linkedin } from "lucide-react";
 
 function Footer() {
 	return (
@@ -16,6 +16,14 @@ function Footer() {
           		>
             		<Mail size={20} />
           		</a>
+				<a
+					href="cv.pdf"
+					download
+					className="text-gray-300 hover:text-gray-300 transition-colors duration-200 p-2 hover:bg-gray-800 rounded-full"
+            		title="CV"
+				>
+					<FileDown size={20} />
+				</a>
           		<a
             		href="https://github.com/mvachera"
             		target="_blank"

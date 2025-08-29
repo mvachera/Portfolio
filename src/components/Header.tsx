@@ -16,21 +16,21 @@ function Header() {
     			<span className="font-light text-white sans-extralight ml-16">Mathéo Vacherat</span>
 			</div>
 			<nav className="flex justify-center space-x-6 px-6 py-3">
-				<Link to="/" className='flex items-center space-x-1'>
+				<a href="#home" className='flex items-center space-x-1'>
 					<Home size={16} className='text-blue-500' />
-					<span className='text-gray-400'>Home</span>
-				</Link>
-				<Link to="/About" className='flex items-center space-x-1'>
+					<span className='text-gray-400 hover:text-white'>Home</span>
+				</a>
+				<a href="#about" className='flex items-center space-x-1'>
 					<HelpCircle size={16} className='text-green-500' />
-					<span className='text-gray-400'>About</span>
-				</Link>
-				<Link to="/Contact" className='flex items-center space-x-1'>
+					<span className='text-gray-400 hover:text-white'>About</span>
+				</a>
+				<a href="#contact" className='flex items-center space-x-1'>
 					<Mail size={16} className='text-yellow-500' />
-					<span className='text-gray-400'>Contact</span>
-				</Link>
+					<span className='text-gray-400 hover:text-white'>Contact</span>
+				</a>
 				<Link to="/Projects" className='flex items-center space-x-1'>
 					<Rocket size={16} className='text-purple-500' />
-					<span className='text-gray-400'>Projects</span>
+					<span className='text-gray-400 hover:text-white'>Projects</span>
 				</Link>
 			</nav>
 			<div className="w-40"></div>
