@@ -1,47 +1,67 @@
 function Contact() {
-	return (
-		<div className="min-h-screen flex justify-center items-center">
-			<form className="w-full max-w-md bg-gray-900 p-6 rounded-2xl shadow-lg space-y-4">
-  				<div>
-  				  <label htmlFor="name" className="block text-sm font-medium text-gray-300">Name</label>
-  				  <input
-  				    type="text"
-  				    id="name"
-  				    name="name"
-  				    className="mt-1 block w-full rounded-md bg-gray-800 border border-gray-700 text-gray-200 focus:border-yellow-400 focus:ring focus:ring-yellow-400/20 p-2"
-  				    required
-  				  />
-  				</div>
-  				<div>
-  				  <label htmlFor="email" className="block text-sm font-medium text-gray-300">Email</label>
-  				  <input
-  				    type="email"
-  				    id="email"
-  				    name="email"
-  				    className="mt-1 block w-full rounded-md bg-gray-800 border border-gray-700 text-gray-200 focus:border-yellow-400 focus:ring focus:ring-yellow-400/20 p-2"
-  				    required
-  				  />
-  				</div>
-  				<div>
-  				  <label htmlFor="message" className="block text-sm font-medium text-gray-300">Message</label>
-  				  <textarea
-  				    id="message"
-  				    name="message"
-  				    rows={4}
-  				    className="mt-1 block w-full rounded-md bg-gray-800 border border-gray-700 text-gray-200 focus:border-yellow-400 focus:ring focus:ring-yellow-400/20 p-2"
-  				    required
-  				  ></textarea>
-  				</div>
-  				<button
-  				  type="submit"
-  				  className="w-full bg-yellow-400 text-black font-semibold py-2 px-4 rounded-md hover:bg-yellow-300 transition-colors"
-  				>
-  				  Send
-  				</button>
-			</form>
+  return (
+    <div className="min-h-screen flex justify-center items-center p-8">
+      <div className="w-full max-w-2xl">
+        {/* Titre CONTACT centré au-dessus du formulaire */}
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-white mb-4">CONTACT</h1>
+          <div className="w-16 h-1 bg-purple-500 mx-auto mb-6 rounded-lg"></div>
+          <p className="text-gray-300 text-lg max-w-lg mx-auto">
+            Feel free to Contact me by submitting the form below and I will get back to you as soon as possible !
+          </p>
+        </div>
 
-		</div>
-	)
+        {/* Formulaire agrandi */}
+        <form className="bg-white p-8 rounded-md shadow-lg space-y-6">
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              className="w-full rounded-md bg-gray-100 border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-purple-500 focus:ring focus:ring-purple-500/20 p-4 text-base"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              className="w-full rounded-md bg-gray-100 border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-purple-500 focus:ring focus:ring-purple-500/20 p-4 text-base"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows={8}
+              placeholder="Enter Your Message"
+              className="w-full rounded-md bg-gray-100 border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-purple-500 focus:ring focus:ring-purple-500/20 p-4 text-base resize-none"
+              required
+            ></textarea>
+          </div>
+
+          {/* Bouton aligné à droite */}
+          <div className="flex justify-end">
+            <button
+              type="submit"
+              className="bg-purple-500 text-white font-semibold py-3 px-8 rounded-md hover:bg-purple-600 transition-colors"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
 }
 
 export default Contact;
