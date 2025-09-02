@@ -19,6 +19,10 @@ function Header() {
 					<Home size={16} className='text-blue-500' />
 					<span className='text-gray-400 hover:text-white'>Home</span>
 				</a>
+				<a href="#projects" className='flex items-center space-x-1'>
+					<Rocket size={16} className='text-purple-500' />
+					<span className='text-gray-400 hover:text-white'>Projects</span>
+				</a>
 				<a href="#about" className='flex items-center space-x-1'>
 					<HelpCircle size={16} className='text-green-500' />
 					<span className='text-gray-400 hover:text-white'>About</span>
@@ -26,10 +30,6 @@ function Header() {
 				<a href="#contact" className='flex items-center space-x-1'>
 					<Mail size={16} className='text-yellow-500' />
 					<span className='text-gray-400 hover:text-white'>Contact</span>
-				</a>
-				<a href="#projects" className='flex items-center space-x-1'>
-					<Rocket size={16} className='text-purple-500' />
-					<span className='text-gray-400 hover:text-white'>Projects</span>
 				</a>
 			</nav>
 			<div className="w-40"></div>

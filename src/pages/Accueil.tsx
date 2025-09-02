@@ -4,6 +4,7 @@ import Mes_contacts from '../components/Mes_contacts';
 import Home from './Home'
 import About from './About';
 import Contact from './Contact'
+import Projects from './Projects';
 
 function Accueil() {
 	return (
@@ -12,6 +13,9 @@ function Accueil() {
 			<Mes_contacts />
 			<section id='home'>
 				<Home />
+			</section>
+			<section id='projects'>
+				<Projects />
 			</section>
 			<section id='about'>
 				<About />
