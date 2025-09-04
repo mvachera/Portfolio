@@ -13,19 +13,19 @@ function About() {
               
               <div className="space-y-6">
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  Après plusieurs années consacrées au football, j'ai choisi 
-                  de me réorienter vers une autre passion : la programmation. Cette 
-                  transition m'a appris l'importance de la discipline, de l'endurance et 
-                  surtout de l'apprentissage continu.
+                  After several years dedicated to football, I chose to reorient
+                  myself towards another passion: programming. This transition
+                  taught me to become self-taught and quickly adapt to new
+                  technical challenges.
                 </p>
                 
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  J'ai étudié l'informatique en Californie avant de rejoindre{" "}
-                  <span className="font-semibold text-teal-200">l'École 42</span> à Paris, où j'ai appris 
-                  à coder en autonomie à travers des projets concrets. Aujourd'hui, je 
-                  m'intéresse autant au back-end qu'au front-end, avec une affinité 
-                  particulière pour la conception de systèmes robustes et l'expérience 
-                  utilisateur.<br/>
+                  I started studying computer science in California before joining the{" "}
+                  <span className="font-semibold text-teal-200">42 school</span> in Paris,
+                  where I deepened my theoretical knowledge through a structured academic
+                  approach. Today, I am a little more interested in the back-end than the
+                  front-end, with a particular affinity for designing robust systems and
+                  user experience.<br/>
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">
                   Visit my{" "}
@@ -105,26 +105,25 @@ function About() {
                 Projets & Expériences
               </h2>
               
-              <div className="bg-gray-800 rounded-lg p-5 mb-6 border-l-4 border-teal-300">
-                <h3 className="text-xl font-semibold text-teal-200 mb-2">École 42</h3>
-                <p className="text-gray-400 text-sm mb-3">2023 - Présent</p>
-                <p className="text-gray-300">
-                  Formation intensive en programmation par projets. Développement 
-                  d'applications système en C/C++, création d'un serveur web, 
-                  et collaboration sur des projets d'équipe complexes.
-                </p>
-              </div>
-              
               <div className="bg-gray-800 rounded-lg p-5 mb-6 border-l-4 border-blue-300">
                 <h3 className="text-xl font-semibold text-blue-200 mb-2">Études en Californie</h3>
                 <p className="text-gray-400 text-sm mb-3">2021 - 2022</p>
                 <p className="text-gray-300">
-                  Immersion dans l'écosystème tech californien. Apprentissage 
-                  des fondamentaux de l'informatique et découverte des méthodes 
-                  agiles de développement.
+                  Studies in computer science in California. Learning the fundamentals
+                  of computing and discovering good development practices.
                 </p>
               </div>
             </div>
+
+              <div className="bg-gray-800 rounded-lg p-5 mb-6 border-l-4 border-teal-300">
+                <h3 className="text-xl font-semibold text-teal-200 mb-2">École 42</h3>
+                <p className="text-gray-400 text-sm mb-3">2023 - Présent</p>
+                <p className="text-gray-300">
+                  Intensive training in project programming. Development of system
+                  applications in C/C++, creation of a web server, and collaboration
+                  on complex team projects..
+                </p>
+              </div>
 
             {/* Section compétences techniques détaillées */}
             <div className="bg-gray-800 rounded-lg p-5">
