@@ -1,41 +1,59 @@
-function ProjectCard({ photo, description, technologies }: { photo: string; description: string; technologies?: string[] }) {
+function ProjectCard({ photo, description, technologies }:
+  { photo: string; description: string; technologies?: string[] }) {
   return (
-    <div className="group relative bg-gray-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 cursor-pointer w-80 h-80">
-      {/* Image Container */}
-      <div className="relative h-32 overflow-hidden">
-        <img 
-          src={photo} 
-          alt={description} 
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    <div className="group relative bg-gray-300 rounded-2xl
+      overflow-hidden shadow-xl hover:shadow-2xl transition-all
+      duration-500 transform hover:-translate-y-3 cursor-pointer
+      w-80 h-80">
+
+      <div className="flex justify-between">
+        {/* Image Container */}
+        <div className="relative overflow-hidden w-44 h-44">
+          <img 
+            src={photo} 
+            alt={description} 
+            className="w-full h-full transition-transform
+            duration-500 group-hover:scale-105"
+          />
+          {/* Gradient overlay */}
+          {/* <div className="absolute inset-0 bg-gradient-to-t
+          from-black/60 via-transparent to-transparent opacity-0
+          group-hover:opacity-100 transition-opacity duration-300"></div> */}
+        </div>
+
+        {/* Content Container */}
+        <div className="p-4 w-1/2 h-44 ">
+          {/* Technologies */}
+          {technologies && technologies.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-4">
+              {technologies.map((tech, index) => (
+                <span 
+                  key={index}
+                  className="px-3 py-1 bg-blue-100 text-blue-800
+                  text-xs font-medium rounded-full border
+                  border-blue-200 hover:bg-blue-200 transition-colors
+                  duration-200"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-      
-      {/* Content Container */}
-      <div className="p-4">
-        {/* Technologies */}
-        {technologies && technologies.length > 0 && (
-          <div className="flex flex-wrap gap-2 mb-4">
-            {technologies.map((tech, index) => (
-              <span 
-                key={index}
-                className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full border border-blue-200 hover:bg-blue-200 transition-colors duration-200"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        )}
-        
-        {/* Description */}
-        <p className="text-gray-600 text-sm leading-relaxed line-clamp-4">
-          {description}
-        </p>
+
+      {/* Description */}
+      <div className="flex items-center justify-center h-1/2">
+      <p className="text-gray-600 text-sm leading-relaxed
+        line-clamp-4 flex mx-4">
+        {description}
+      </p>
       </div>
-      
+
       {/* Hover border effect */}
-      <div className="absolute inset-0 rounded-2xl border-2 border-red-400 group-hover:border-blue-400 transition-colors duration-300"></div>
+      <div className="absolute inset-0 rounded-2xl border-2
+        border-red-400 group-hover:border-blue-400
+        transition-colors duration-300"></div>
     </div>
   );
 }
@@ -52,7 +70,7 @@ function Projects() {
         </div>
         
         {/* Ligne du haut - 2 projets */}
-        <div className="flex justify-center gap-12 mb-16">
+        <div className="flex justify-center gap-12 mb-16 flex-wrap">
           <ProjectCard 
             photo="ft_transcendence.png"
             description="End of course project combining a Pong game with
@@ -62,11 +80,11 @@ function Projects() {
           <ProjectCard
             photo="matcha.png"
             description="Dating site integrating profiles, matching, messaging, geolocation and interests."
-            technologies={["JavaScript/TypeScript", "React", "Express", "PostgreSQL"]} />
+            technologies={["JavaScript / TypeScript", "React", "Express", "PostgreSQL"]} />
         </div>
         
         {/* Ligne du bas - 3 projets */}
-        <div className="flex justify-center gap-12">
+        <div className="flex justify-center gap-12 flex-wrap">
           <ProjectCard
             photo="webserv.png"
             description="Implementation of an RFC 2616 compliant HTTP server,
