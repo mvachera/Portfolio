@@ -106,7 +106,7 @@ function About() {
               </h2>
               
               <div className="bg-gray-800 rounded-lg p-5 mb-6 border-l-4 border-blue-300">
-                <h3 className="text-xl font-semibold text-blue-200 mb-2">Studies in California</h3>
+                <h3 className="text-xl font-semibold text-blue-200 mb-2">California</h3>
                 <p className="text-gray-400 text-sm mb-3">2021 - 2022</p>
                 <p className="text-gray-300">
                   Studies in computer science in California. Learning the fundamentals
