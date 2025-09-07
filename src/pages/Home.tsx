@@ -1,7 +1,7 @@
 function Home() {
 	return (
-		<div className="min-h-screen flex justify-center items-center">
-			<div className="flex flex-col w-3/5 pr-16">
+		<div className="min-h-screen flex justify-center items-center space-x-6">
+			<div className="flex flex-col w-1/2">
 				<h1 className="text-7xl font-bold text-white pb-3 font-extralight">Welcome</h1>
 				<div className="relative pl-6">
 					<div className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-t from-yellow-400/80 to-transparent/10"></div>
@@ -14,8 +14,8 @@ function Home() {
 						</p>
 				</div>
 			</div>
-			<div className="p-8">
-				<h2 className="font-extralight text-2xl font-bold text-white pb-3 mb-2">Projects</h2>
+			<div className="p-8 pl-2">
+				<h2 className="font-light text-2xl font-bold text-white pb-3 mb-2">Projects</h2>
 				<div className="relative pl-6 pt-2">
 					<div className="absolute left-0 top-2 h-full w-[2px] bg-gradient-to-b from-yellow-400/80 via-yellow-400/20 to-transparent"></div>
 					<div className="absolute left-2 top-0 w-full h-[2px] bg-gradient-to-r from-yellow-400/80 via-yellow-400/20 to-transparent"></div>
@@ -26,20 +26,25 @@ function Home() {
 							  strokeWidth="4"
 							  strokeLinecap="round" />
 					</svg>
-					<div className="text-gray-400 hover:text-white cursor-pointer py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-2">
-						Ft_transcendence
+					<div className="text-gray-400 hover:text-white cursor-pointer
+						py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-2">
+						<a href="#projects">Ft_transcendence</a>
 					</div>
-					<div className="text-gray-400 hover:text-white cursor-pointer py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-1">
-						Matcha
+					<div className="text-gray-400 hover:text-white cursor-pointer
+						py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-1">
+						<a href="#projects">Matcha</a>
 					</div>
-					<div className="text-gray-400 hover:text-white cursor-pointer py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-1">
-						Webserv
+					<div className="text-gray-400 hover:text-white cursor-pointer
+						py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-1">
+						<a href="#projects">Webserv</a>
 					</div>
-					<div className="text-gray-400 hover:text-white cursor-pointer py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-1">
-						Ft_irc
+					<div className="text-gray-400 hover:text-white cursor-pointer
+						py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-1">
+						<a href="#projects">Inception</a>
 					</div>
-					<div className="text-gray-400 hover:text-white cursor-pointer py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-1">
-						Inception
+					<div className="text-gray-400 hover:text-white cursor-pointer
+						py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors mt-1">
+						<a href="#projects">Ft_irc</a>
 					</div>
 				</div>
 			</div>

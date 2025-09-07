@@ -57,7 +57,7 @@ function About() {
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-1 overflow-hidden">
                     <div className="bg-gradient-to-r from-teal-300 to-teal-500 h-1 rounded-full
-                    transition-all duration-1000 ease-out animate-pulse shadow-sm shadow-blue-400"
+                    transition-all duration-2000 ease-out animate-pulse shadow-sm shadow-blue-400"
                     style={{width: '68%'}}></div>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ function About() {
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-1 overflow-hidden">
                     <div className="bg-gradient-to-r from-pink-300 to-pink-500 h-1 rounded-full
-                    transition-all duration-1000 ease-out animate-pulse shadow-sm shadow-blue-400"
+                    transition-all duration-2000 ease-out animate-pulse shadow-sm shadow-blue-400"
                     style={{width: '78%'}}></div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ function About() {
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-1 overflow-hidden">
                     <div className="bg-gradient-to-r from-blue-300 to-blue-500 h-1 rounded-full
-                    transition-all duration-1000 ease-out animate-pulse shadow-sm shadow-blue-400"
+                    transition-all duration-2000 ease-out animate-pulse shadow-sm shadow-blue-400"
                     style={{width: '60%'}}></div>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ function About() {
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-1 overflow-hidden">
                     <div className="bg-gradient-to-r from-orange-300 to-orange-500 h-1 rounded-full
-                    transition-all duration-1000 ease-out animate-pulse shadow-sm shadow-blue-400"
+                    transition-all duration-2000 ease-out animate-pulse shadow-sm shadow-blue-400"
                     style={{width: '82%'}}></div>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ function About() {
               </h2>
               
               <div className="bg-gray-800 rounded-lg p-5 mb-6 border-l-4 border-blue-300">
-                <h3 className="text-xl font-semibold text-blue-200 mb-2">Études en Californie</h3>
+                <h3 className="text-xl font-semibold text-blue-200 mb-2">Studies in California</h3>
                 <p className="text-gray-400 text-sm mb-3">2021 - 2022</p>
                 <p className="text-gray-300">
                   Studies in computer science in California. Learning the fundamentals
@@ -116,8 +116,8 @@ function About() {
             </div>
 
               <div className="bg-gray-800 rounded-lg p-5 mb-6 border-l-4 border-teal-300">
-                <h3 className="text-xl font-semibold text-teal-200 mb-2">École 42</h3>
-                <p className="text-gray-400 text-sm mb-3">2023 - Présent</p>
+                <h3 className="text-xl font-semibold text-teal-200 mb-2">42 school</h3>
+                <p className="text-gray-400 text-sm mb-3">2023 - Present</p>
                 <p className="text-gray-300">
                   Intensive training in project programming. Development of system
                   applications in C/C++, creation of a web server, and collaboration

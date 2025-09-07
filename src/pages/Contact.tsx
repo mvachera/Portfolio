@@ -1,4 +1,5 @@
 import React, { useState, FormEvent } from 'react';
+import { useToast } from "@/hooks/use-toast";
 import emailjs from '@emailjs/browser';
 
 interface FormData {
@@ -15,7 +16,7 @@ function Contact() {
   });
 
   const [isLoading, setIsLoading] = useState(false);
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const { toast } = useToast();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -28,26 +29,33 @@ function Contact() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    setStatus('idle');
 
     try {
       const result = await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID!,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
         },
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
       );
 
       console.log('Email envoyé avec succès:', result);
-      setStatus('success');
+      toast({
+        title: "Message sent !",
+        description: "I will respond to you as soon as possible.",
+        variant: "default",
+      });
       setFormData({ name: '', email: '', message: ''});
     } catch (error) {
       console.error('Erreur lors de l\'envoi:', error);
-      setStatus('error');
+      toast({
+        title: "Error sending !",
+        description: "An error occurred. Please try again.",
+        variant: "destructive",
+      });
     } finally {
       setIsLoading(false);
     }
@@ -65,19 +73,6 @@ function Contact() {
             Feel free to Contact me by submitting the form below and I will get back to you as soon as possible !
           </p>
         </div>
-
-        {/* Messages de statut */}
-        {status === 'success' && (
-          <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
-            Message envoyé avec succès ! Je vous répondrai rapidement.
-          </div>
-        )}
-
-        {status === 'error' && (
-          <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md">
-            Erreur lors de l'envoi. Veuillez réessayer.
-          </div>
-        )}
 
         {/* Formulaire */}
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-md shadow-lg space-y-6">

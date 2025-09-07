@@ -8,17 +8,13 @@ function ProjectCard({ photo, description, technologies }:
 
       <div className="flex justify-between">
         {/* Image Container */}
-        <div className="relative overflow-hidden w-44 h-44">
+        <div className="relative overflow-hidden w-44 h-44 mt-4">
           <img 
             src={photo} 
-            alt={description} 
+            alt={"NULL"} 
             className="w-full h-full transition-transform
             duration-500 group-hover:scale-105"
           />
-          {/* Gradient overlay */}
-          {/* <div className="absolute inset-0 bg-gradient-to-t
-          from-black/60 via-transparent to-transparent opacity-0
-          group-hover:opacity-100 transition-opacity duration-300"></div> */}
         </div>
 
         {/* Content Container */}
@@ -45,7 +41,7 @@ function ProjectCard({ photo, description, technologies }:
       {/* Description */}
       <div className="flex items-center justify-center h-1/2">
       <p className="text-gray-600 text-sm leading-relaxed
-        line-clamp-4 flex mx-4">
+        line-clamp-4 flex mx-4 mb-8">
         {description}
       </p>
       </div>
@@ -79,7 +75,9 @@ function Projects() {
             technologies={["Django", "Vanilla JavaScript", "Python", "JavaScript", "PostgreSQL"]} />
           <ProjectCard
             photo="matcha.png"
-            description="Dating site integrating profiles, matching, messaging, geolocation and interests."
+            description="Dating site with profiles, matching, geolocation and interests,
+              to facilitate meetings between users. The objective is to promote exchanges
+              and meetings by highlighting what users have in common."
             technologies={["JavaScript / TypeScript", "React", "Express", "PostgreSQL"]} />
         </div>
         
@@ -90,7 +88,7 @@ function Projects() {
             description="Implementation of an RFC 2616 compliant HTTP server,
               supporting GET, POST and DELETE requests, as well as CGI,
               error handling and concurrent connections."
-            technologies={["C++", "HTTP", "CGI"]} />
+            technologies={["C++", "HTTP", "CGI", "HTML / CSS", "Sockets"]} />
           <ProjectCard
             photo="inception.png"
             description="Project based on Docker, consisting of orchestrating
@@ -99,8 +97,9 @@ function Projects() {
             technologies={["Docker", "Docker Compose", "Nginx", "Wordpress", "MariaDB"]} />
           <ProjectCard
             photo="ft_irc.png"
-            description="Creation of an IRC server compliant with the RFC 
-            1459 protocol, allowing real-time user, channel and message management."
+            description="Creation of an IRC server compliant with the RFC 1459 protocol,
+              allowing user, channel and message management, and putting into practice
+              the concepts of network and communication via sockets."
             technologies={["C++", "Sockets"]} />
         </div>
     </div>
