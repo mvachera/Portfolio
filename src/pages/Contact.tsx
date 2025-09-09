@@ -1,5 +1,6 @@
 import React, { useState, FormEvent } from 'react';
 import { useToast } from "@/hooks/use-toast";
+import Footer from '../components/Footer';
 import emailjs from '@emailjs/browser';
 
 interface FormData {
@@ -63,7 +64,7 @@ function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center p-8">
+    <div className="min-h-screen flex justify-center items-center p-8 pb-24 relative">
       <div className="w-full max-w-2xl">
         {/* Titre CONTACT centré au-dessus du formulaire */}
         <div className="text-center mb-8">
@@ -137,6 +138,7 @@ function Contact() {
           </div>
         </form>
       </div>
+			  <Footer />
     </div>
   );
 }

@@ -1,12 +1,12 @@
 function About() {
   return (
     <div className="min-h-screen text-white p-8 flex items-center">
-      <div className="max-w-7xl mx-auto mt-6">
+      <div className="max-w-7xl mx-auto mt-12">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Section gauche - Skills & Experience */}
           <div className="space-y-8">
             <div>
-              <h1 className="text-5xl font-bold text-teal-300 mb-6">
+              <h1 className="text-5xl font-bold text-teal-300 mb-8">
                 Skills &<br />
                 Experience
               </h1>

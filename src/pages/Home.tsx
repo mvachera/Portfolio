@@ -1,6 +1,11 @@
+import Mes_contacts from '../components/Mes_contacts';
+
 function Home() {
 	return (
 		<div className="min-h-screen flex justify-center items-center space-x-6">
+			<div className='hidden lg:block'>
+				<Mes_contacts />
+			</div>
 			<div className="flex flex-col w-1/2">
 				<h1 className="text-7xl font-bold text-white pb-3 font-extralight">Welcome</h1>
 				<div className="relative pl-6">

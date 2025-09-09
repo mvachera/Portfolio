@@ -56,7 +56,7 @@ function ProjectCard({ photo, description, technologies }:
 
 function Projects() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center py-16 px-8 mt-8">
+    <div className="min-h-screen flex flex-col justify-center items-center py-20">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-white mb-4">PROJECTS</h1>
           <div className="w-16 h-1 bg-purple-500 mx-auto mb-6 rounded-lg"></div>

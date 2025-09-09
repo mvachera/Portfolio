@@ -3,8 +3,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 function Header() {
 	return (
-		<header className="bg-black fixed py-1 flex items-center justify-between w-full px-4">
-			<a href="#home" className="flex items-center">
+		<header className="bg-black fixed top-0 left-0 right-0 py-4 flex items-center justify-between px-4 flex-wrap">
+			<a href="#home" className="flex iems-center">
     			<Avatar>
 					<AvatarImage src="me.png" />
 					<AvatarFallback>MV</AvatarFallback>
@@ -12,7 +12,7 @@ function Header() {
     			<span className="font-light text-white sans-extralight ml-2 mt-2
 					hover:text-purple-900">Mathéo Vacherat</span>
 			</a>
-			<nav className="flex justify-center space-x-12 px-6 py-3">
+			<nav className="hidden sm:flex flex justify-center space-x-12 px-6 py-3">
 				<a href="#home" className='flex items-center space-x-1'>
 					<span className='text-gray-400 hover:text-purple-900'>Home</span>
 				</a>

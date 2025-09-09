@@ -2,9 +2,9 @@ import { Mail, FileDown, Github, Linkedin } from "lucide-react";
 
 function Mes_contacts() {
 	return (
-		<div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
+		<div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-50 flex-wrap">
 			<div className="bg-gray-900 rounded-r-lg shadow-lg p-3">
-				<div className="flex flex-col space-y-4">
+				<div className="flex flex-col space-y-8">
 					<a
 						href="cv.pdf"
 						download
