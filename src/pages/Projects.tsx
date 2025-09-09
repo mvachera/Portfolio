@@ -61,7 +61,7 @@ function Projects() {
           <h1 className="text-4xl font-bold text-white mb-4">PROJECTS</h1>
           <div className="w-16 h-1 bg-purple-500 mx-auto mb-6 rounded-lg"></div>
           <p className="text-gray-300 text-lg max-w-lg mx-auto">
-            Here you will find 5 of my projects coded for school 42 !
+            Discover 5 projects I developed at 42 school, combining code, creativity, and technology !
           </p>
         </div>
         

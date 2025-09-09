@@ -162,7 +162,7 @@ function About() {
                     <li>• PostgreSQL</li>
                     <li>• API REST</li>
                     <li>• OAuth2</li>
-                    <li>• AWS</li>
+                    <li>• English</li>
                   </ul>
                 </div>
               </div>
