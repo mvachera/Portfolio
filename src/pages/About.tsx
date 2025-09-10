@@ -58,7 +58,7 @@ function About() {
                   <div className="w-full bg-gray-700 rounded-full h-1 overflow-hidden">
                     <div className="bg-gradient-to-r from-teal-300 to-teal-500 h-1 rounded-full
                     transition-all duration-2000 ease-out animate-pulse shadow-sm shadow-blue-400"
-                    style={{width: '68%'}}></div>
+                    style={{width: '60%'}}></div>
                   </div>
                 </div>
                 
@@ -69,7 +69,7 @@ function About() {
                   <div className="w-full bg-gray-700 rounded-full h-1 overflow-hidden">
                     <div className="bg-gradient-to-r from-pink-300 to-pink-500 h-1 rounded-full
                     transition-all duration-2000 ease-out animate-pulse shadow-sm shadow-blue-400"
-                    style={{width: '78%'}}></div>
+                    style={{width: '68%'}}></div>
                   </div>
                 </div>
                 
@@ -80,7 +80,7 @@ function About() {
                   <div className="w-full bg-gray-700 rounded-full h-1 overflow-hidden">
                     <div className="bg-gradient-to-r from-blue-300 to-blue-500 h-1 rounded-full
                     transition-all duration-2000 ease-out animate-pulse shadow-sm shadow-blue-400"
-                    style={{width: '60%'}}></div>
+                    style={{width: '52%'}}></div>
                   </div>
                 </div>
                 
@@ -91,7 +91,7 @@ function About() {
                   <div className="w-full bg-gray-700 rounded-full h-1 overflow-hidden">
                     <div className="bg-gradient-to-r from-orange-300 to-orange-500 h-1 rounded-full
                     transition-all duration-2000 ease-out animate-pulse shadow-sm shadow-blue-400"
-                    style={{width: '82%'}}></div>
+                    style={{width: '72%'}}></div>
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@ function About() {
               <h3 className="text-2xl font-semibold text-white mb-4">Stack Technique</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <h4 className="font-semibold text-teal-200 mb-2">Langages</h4>
+                  <h4 className="font-semibold text-teal-200 mb-2">Languages</h4>
                   <ul className="space-y-1 text-gray-300 text-sm">
                     <li>• C/C++</li>
                     <li>• JavaScript/TypeScript</li>
@@ -148,7 +148,7 @@ function About() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-blue-200 mb-2">Outils</h4>
+                  <h4 className="font-semibold text-blue-200 mb-2">Tools</h4>
                   <ul className="space-y-1 text-gray-300 text-sm">
                     <li>• Git/GitHub</li>
                     <li>• Docker</li>
@@ -157,7 +157,7 @@ function About() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-orange-200 mb-2">Autres</h4>
+                  <h4 className="font-semibold text-orange-200 mb-2">Others</h4>
                   <ul className="space-y-1 text-gray-300 text-sm">
                     <li>• PostgreSQL</li>
                     <li>• API REST</li>
