@@ -121,7 +121,7 @@ function About() {
                 <p className="text-gray-300">
                   Intensive training in project programming. Development of system
                   applications in C/C++, creation of a web server, and collaboration
-                  on complex team projects..
+                  on complex team projects.
                 </p>
               </div>
 
