@@ -60,47 +60,57 @@ function Projects() {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-white mb-4">PROJECTS</h1>
           <div className="w-16 h-1 bg-purple-500 mx-auto mb-6 rounded-lg"></div>
-          <p className="text-gray-300 text-lg max-w-lg mx-auto">
+          <p className="text-gray-300 text-lg max-w-lg mx-10">
             Discover 5 projects I developed at 42 school, combining code, creativity, and technology !
           </p>
         </div>
         
         {/* Ligne du haut - 2 projets */}
         <div className="flex justify-center gap-12 mb-16 flex-wrap">
-          <ProjectCard 
-            photo="ft_transcendence.png"
-            description="End of course project combining a Pong game with
-              modern web features (front-end and back-end),
-              implementing advanced concepts such as WebSockets and OAuth2."
-            technologies={["Django", "Vanilla JavaScript", "Python", "JavaScript", "PostgreSQL"]} />
-          <ProjectCard
-            photo="matcha.png"
-            description="Dating site with profiles, matching, geolocation and interests,
-              to facilitate meetings between users. The objective is to promote exchanges
-              and meetings by highlighting what users have in common."
-            technologies={["JavaScript / TypeScript", "React", "Express", "PostgreSQL"]} />
+          <section id='ft_transcendence'>
+            <ProjectCard 
+              photo="ft_transcendence.png"
+              description="End of course project combining a Pong game with
+                modern web features (front-end and back-end),
+                implementing advanced concepts such as WebSockets and OAuth2."
+              technologies={["Django", "Vanilla JavaScript", "Python", "JavaScript", "PostgreSQL"]} />
+          </section>
+          <section id='matcha'>
+            <ProjectCard
+              photo="matcha.png"
+              description="Dating site with profiles, matching, geolocation and interests,
+                to facilitate meetings between users. The objective is to promote exchanges
+                and meetings by highlighting what users have in common."
+              technologies={["JavaScript / TypeScript", "React", "Express", "PostgreSQL"]} />
+          </section>
         </div>
         
         {/* Ligne du bas - 3 projets */}
         <div className="flex justify-center gap-12 flex-wrap">
-          <ProjectCard
-            photo="webserv.png"
-            description="Implementation of an RFC 2616 compliant HTTP server,
-              supporting GET, POST and DELETE requests, as well as CGI,
-              error handling and concurrent connections."
-            technologies={["C++", "HTTP", "CGI", "HTML / CSS", "Sockets"]} />
-          <ProjectCard
-            photo="inception.png"
-            description="Project based on Docker, consisting of orchestrating
-              several containers to host a complete architecture including Nginx,
-              MariaDB and WordPress."
-            technologies={["Docker", "Docker Compose", "Nginx", "Wordpress", "MariaDB"]} />
-          <ProjectCard
-            photo="ft_irc.png"
-            description="Creation of an IRC server compliant with the RFC 1459 protocol,
-              allowing user, channel and message management, and putting into practice
-              the concepts of network and communication via sockets."
-            technologies={["C++", "Sockets"]} />
+          <section id='webserv'>
+            <ProjectCard
+              photo="webserv.png"
+              description="Implementation of an RFC 2616 compliant HTTP server,
+                supporting GET, POST and DELETE requests, as well as CGI,
+                error handling and concurrent connections."
+              technologies={["C++", "HTTP", "CGI", "HTML / CSS", "Sockets"]} />
+          </section>
+          <section id='inception'>
+            <ProjectCard
+              photo="inception.png"
+              description="Project based on Docker, consisting of orchestrating
+                several containers to host a complete architecture including Nginx,
+                MariaDB and WordPress."
+              technologies={["Docker", "Docker Compose", "Nginx", "Wordpress", "MariaDB"]} />
+          </section>
+          <section id='ft_irc'>
+            <ProjectCard
+              photo="ft_irc.png"
+              description="Creation of an IRC server compliant with the RFC 1459 protocol,
+                allowing user, channel and message management, and putting into practice
+                the concepts of network and communication via sockets."
+              technologies={["C++", "Sockets"]} />
+          </section>
         </div>
     </div>
   );

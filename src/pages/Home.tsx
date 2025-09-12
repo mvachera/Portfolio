@@ -1,6 +1,30 @@
+import { useState, useEffect } from 'react';
 import Mes_contacts from '../components/Mes_contacts';
 
+const useScreenSize = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+
+    checkScreenSize();
+
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
+  return isDesktop;
+};
+
+const getHref = (mobile, desktop, isDesktop) => 
+  isDesktop ? desktop : mobile;
+
 function Home() {
+	const isDesktop = useScreenSize();
+
 	return (
 		<div id="home" className="min-h-screen flex flex-col lg:flex-row justify-center items-center lg:space-x-6 px-4 lg:px-0 py-8 lg:py-0 mt-16 sm:mt-8 lg:mt-0">
 			<div className='hidden lg:block'>
@@ -43,27 +67,27 @@ function Home() {
 						<div className="text-gray-400 hover:text-white cursor-pointer 
 							py-3 lg:py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors 
 							text-center lg:text-left lg:mt-2">
-							<a href="#projects">Ft_transcendence</a>
+							<a href={getHref('#ft_transcendence', '#projects', isDesktop)}>Ft_transcendence</a>
 						</div>
 						<div className="text-gray-400 hover:text-white cursor-pointer 
 							py-3 lg:py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors 
 							text-center lg:text-left lg:mt-1">
-							<a href="#projects">Matcha</a>
+							<a href={getHref('#matcha', '#projects', isDesktop)}>Matcha</a>
 						</div>
 						<div className="text-gray-400 hover:text-white cursor-pointer 
 							py-3 lg:py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors 
 							text-center lg:text-left lg:mt-1">
-							<a href="#projects">Webserv</a>
+							<a href={getHref('#webserv', '#projects', isDesktop)}>Webserv</a>
 						</div>
 						<div className="text-gray-400 hover:text-white cursor-pointer 
 							py-3 lg:py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors 
 							text-center lg:text-left lg:mt-1">
-							<a href="#projects">Inception</a>
+							<a href={getHref('#inception', '#projects', isDesktop)}>Inception</a>
 						</div>
 						<div className="text-gray-400 hover:text-white cursor-pointer 
 							py-3 lg:py-2 border-b border-gray-700 hover:border-yellow-400 transition-colors 
 							text-center lg:text-left lg:mt-1">
-							<a href="#projects">Ft_irc</a>
+							<a href={getHref('#ft_irc', '#projects', isDesktop)}>Ft_irc</a>
 						</div>
 					</div>
 				</div>
