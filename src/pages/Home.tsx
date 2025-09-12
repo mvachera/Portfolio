@@ -19,8 +19,9 @@ const useScreenSize = () => {
   return isDesktop;
 };
 
-const getHref = (mobile, desktop, isDesktop) => 
-  isDesktop ? desktop : mobile;
+function getHref(mobile: string, desktop: string, isDesktop: boolean): string { 
+  return isDesktop ? desktop : mobile;
+}
 
 function Home() {
 	const isDesktop = useScreenSize();
