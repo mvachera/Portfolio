@@ -98,13 +98,8 @@ function About() {
             </div>
           </div>
 
-          {/* Section droite - Projets & Expériences */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-8">
-                Projets & Expériences
-              </h2>
-              
               <div className="bg-gray-800 rounded-lg p-5 mb-6 border-l-4 border-blue-300">
                 <h3 className="text-xl font-semibold text-blue-200 mb-2">Cabrillo College</h3>
                 <p className="text-gray-400 text-sm mb-3">2021 - 2022</p>
@@ -127,7 +122,7 @@ function About() {
 
             {/* Section compétences techniques détaillées */}
             <div className="bg-gray-800 rounded-lg p-5">
-              <h3 className="text-2xl font-semibold text-white mb-4">Stack Technique</h3>
+              <h3 className="text-2xl font-semibold text-white mb-4">Technical Stack</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h4 className="font-semibold text-teal-200 mb-2">Languages</h4>
