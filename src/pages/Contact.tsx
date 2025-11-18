@@ -2,6 +2,7 @@ import React, { useState, FormEvent } from 'react';
 import { useToast } from "@/hooks/use-toast";
 import Footer from '../components/Footer';
 import emailjs from '@emailjs/browser';
+import { EMAILJS_CONFIG } from '@/config/emailjs';
 
 interface FormData {
   name: string;
@@ -33,14 +34,14 @@ function Contact() {
 
     try {
       const result = await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
+        EMAILJS_CONFIG.publicKey
       );
 
       console.log('Email envoyé avec succès:', result);
