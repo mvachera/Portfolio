@@ -67,6 +67,14 @@ function Projects() {
         
         {/* Ligne du haut - 2 projets */}
         <div className="flex justify-center gap-12 mb-16 flex-wrap">
+          <section id='justdoit'>
+            <ProjectCard
+              photo="justdoit.png"
+              description="Habit tracking application containing JWT authentication, 
+                automated email notifications, and AI analysis of habits.
+                https://mvachera.github.io/JustDoIt/"
+              technologies={["JavaScript / TypeScript", "React", "Express", "PostgreSQL"]} />
+          </section>
           <section id='ft_transcendence'>
             <ProjectCard 
               photo="ft_transcendence.png"
@@ -74,14 +82,6 @@ function Projects() {
                 modern web features (front-end and back-end),
                 implementing advanced concepts such as WebSockets and OAuth2."
               technologies={["Django", "Vanilla JavaScript", "Python", "JavaScript", "PostgreSQL"]} />
-          </section>
-          <section id='matcha'>
-            <ProjectCard
-              photo="matcha.png"
-              description="Dating site with profiles, matching, geolocation and interests,
-                to facilitate meetings between users. The objective is to promote exchanges
-                and meetings by highlighting what users have in common."
-              technologies={["JavaScript / TypeScript", "React", "Express", "PostgreSQL"]} />
           </section>
         </div>
         
